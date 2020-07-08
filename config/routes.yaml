@@ -1,3 +1,12 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+register:
+  path: /register
+  controller: App\Controller\AuthenticationController::register
+  methods: POST
+
+api_login_check:
+  path: /api/login_check
+  controller: App\Controller\AuthenticationController::getTokenUser
+  methods: POST
